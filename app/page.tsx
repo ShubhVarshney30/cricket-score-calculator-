@@ -35,8 +35,9 @@ export default function CricketScoreCalculator() {
   }
 
   const updateWickets = () => {
-    if(prevWickets===10){
+    if(prevWickets>=10){
       alert('chutiye kitne players khilvayega')
+      return 10
     }
     setWickets((prevWickets) => prevWickets + 1)
   }
